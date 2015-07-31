@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+
+    android:orientation="vertical" >
+
+ <RelativeLayout
+     android:id="@+id/cloud"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/relativeLayout1"
+     android:background="@drawable/clouds28" >
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="fill_parent"
+         android:layout_height="78dp"
+         android:gravity="center"
+         android:layout_marginTop="10dp"
+         android:padding="10dp"
+         android:text="BOWEN UNIVERSITY AUDIO SURVEILLANCE SYSTEM"
+         android:textColor="#666666"
+         android:textSize="23sp" />
+
+     <ImageView
+         android:id="@+id/blinker"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/textView1"
+         android:layout_marginRight="10dp"
+         android:layout_marginTop="12dp"
+         android:src="@drawable/ketu" />
+
+     <ImageView
+         android:id="@+id/imageView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:src="@drawable/bowen" />
+
+ </RelativeLayout>
+
+<RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="78dp"
+        android:layout_alignParentBottom="true"
+        android:background="#666666" >
+
+        <ImageView
+            android:id="@+id/fileact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/play"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:id="@+id/settingsact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/set"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="#FFFFFF" />
+
+        <ImageView
+            android:background="@drawable/bg"
+    android:clickable="true"
+            android:id="@+id/buttonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/stop3" />
+
+    </RelativeLayout>
+</RelativeLayout>
